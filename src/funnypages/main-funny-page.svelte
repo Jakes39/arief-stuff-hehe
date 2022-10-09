@@ -1,6 +1,6 @@
 <script>
-  import P1 from "./P1.svelte"
-  import P2 from "./P2.svelte"
+  import P1 from "./p1.svelte"
+  import P2 from "./p2.svelte"
   import P3 from "./p3.svelte"
 
   export let pageCount = 0
