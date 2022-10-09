@@ -9,8 +9,8 @@
 	let visible = true
 </script>
 
-<main class="page-wrapper" on:click={handlePage} >
-	<MainFunnyPage {pageCount} />
+<main class="page-wrapper" on:click={handlePage}>
+	<MainFunnyPage {pageCount} {handlePage} />
 
 	<h6 class="muted">Click dong layarnya</h6>
 </main>

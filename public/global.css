@@ -5,6 +5,11 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--muted: #eee;
+	--muted-text: #aaa;
+}
+
 body, html  {
 	padding: 0;
 	margin: 0;
@@ -33,13 +38,42 @@ main > h6 {
 	flex-direction: column;
 	justify-content: center;
 	place-items: center;
+	padding: 0 5%;
 }
 
 .muted {
-	color: #aaa;
+	color: var(--muted-text);
 }
 
 .down50 {
 	position: absolute;
 	top: calc(50% + 50px);
+}
+
+.option-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.option-wrap > button {
+	font-family: 'Inter';
+	font-size: 1.25rem;
+	font-weight: 500;
+	outline: none;
+	border: 1px solid var(--muted);
+	border-radius: 100rem;
+	background: var(--muted);
+	width: 50%;
+	height: 3rem;
+}
+
+h1 {
+	text-align: center;
 }
