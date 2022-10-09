@@ -8,6 +8,7 @@
 </script>
 
 <main>
+	<h2>Why no work</h2>
 	<div class="page-wrapper" on:click={handlePage} >
 		<MainFunnyPage {pageCount} />
 	</div>
