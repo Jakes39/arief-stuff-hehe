@@ -1,18 +1,20 @@
 <script>
+  import { fly } from "svelte/transition"
   import MainFunnyPage from "./funnypages/main-funny-page.svelte"
 
 	let pageCount = 0
 
 	const handlePage = () => pageCount++
 
+	let visible = true
 </script>
 
-<main>
-	<h2>Why no work</h2>
-	<div class="page-wrapper" on:click={handlePage} >
-		<MainFunnyPage {pageCount} />
-	</div>
+<main class="page-wrapper" on:click={handlePage} >
+	<MainFunnyPage {pageCount} />
+
+	<h6 class="muted">Click dong layarnya</h6>
 </main>
+
 
 <style>
 
